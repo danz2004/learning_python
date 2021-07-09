@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
-window = ""
 count = 0
+window = ''
 for i in range(len(seq) - 10):
 	for j in range(i, i + 11):
 		window += seq[j]
