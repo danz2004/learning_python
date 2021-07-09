@@ -7,8 +7,9 @@ read_length = int(sys.argv[3])
 genome = [0] * genome_size
 for i in range(read_number):
 	start = random.randint(0, genome_size - read_length)
-	for start in range(start, start + read_length):
-		genome[start] += 1
+	for j in range(start, start + read_length):
+		genome[j] += 1
+print(genome)
 min = genome[read_length]
 max = genome[read_length]
 sum = 0
