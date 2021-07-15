@@ -13,7 +13,7 @@ print(genome)
 min = genome[read_length]
 max = genome[read_length]
 sum = 0
-for i in range(read_length, genome_size - 2 * read_length):
+for i in range(read_length, genome_size - read_length):
 	if min > genome[i]:
 		min = genome[i]
 	if max < genome[i]:
